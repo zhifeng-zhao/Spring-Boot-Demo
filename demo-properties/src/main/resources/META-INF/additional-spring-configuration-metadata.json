@@ -1,0 +1,28 @@
+{
+  "properties": [
+    {
+      "name": "user.username",
+      "description": "姓名.",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "user.age",
+      "description": "年龄.",
+      "type": "java.lang.Integer"
+    },
+    {
+      "name": "application.name",
+      "description": "Default value is artifactId in pom.xml.",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "application.version",
+      "description": "Default value is version in pom.xml.",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "developer.name",
+      "description": "The Developer Name.",
+      "type": "java.lang.String"
+    }
+]}

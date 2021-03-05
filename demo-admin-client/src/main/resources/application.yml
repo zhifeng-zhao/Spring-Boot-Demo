@@ -1,0 +1,24 @@
+server:
+  port: 8090
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+# 制定服务器地址
+spring:
+  application:
+    name: demo-client
+  boot:
+    admin:
+      client:
+        url: "http://localhost:8080/"
+
+# 制定日志的生成位置
+logging:
+  file:
+    name: "./logs"
