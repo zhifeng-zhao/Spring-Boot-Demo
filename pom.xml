@@ -14,5 +14,6 @@
         <module>demo-actuator</module>
         <module>demo-admin-server</module>
         <module>demo-admin-client</module>
+        <module>demo-logback</module>
     </modules>
 </project>

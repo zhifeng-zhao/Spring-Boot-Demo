@@ -1,0 +1,6 @@
+logging:
+  file:
+    name: "logs/app.log"
+spring:
+  application:
+    name: demo-logback
