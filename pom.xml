@@ -15,5 +15,6 @@
         <module>demo-admin-server</module>
         <module>demo-admin-client</module>
         <module>demo-logback</module>
+        <module>demo-log-aop</module>
     </modules>
 </project>
