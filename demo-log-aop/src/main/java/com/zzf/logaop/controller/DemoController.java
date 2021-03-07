@@ -14,7 +14,7 @@ public class DemoController {
 
     @DemoLog("拦截测试")
     @GetMapping
-    public String hello(String username) {
-        return "hello " + username;
+    public String hello(String userName) {
+        return "hello " + userName;
     }
 }

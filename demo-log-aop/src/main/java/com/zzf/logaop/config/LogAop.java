@@ -26,14 +26,14 @@ public class LogAop {
     @Around("@annotation(demoLog)")
     public Object around(JoinPoint point,DemoLog demoLog) throws Throwable {
 
-        log.info("请求参数:",point.getArgs());
-        log.info("请求方法:",point.getSignature().getName());
+        log.info("请求参数:" + point.getArgs());
+        log.info("请求方法:" + point.getSignature().getName());
         String agent = request.getHeader("User-Agent");
-        log.info("请求浏览器:",agent);
-        log.info("请求方法名：",demoLog.value());
+        log.info("请求浏览器:" + agent);
+        log.info("请求方法名：" + demoLog.value());
         ProceedingJoinPoint joinPoint = (ProceedingJoinPoint) point;
         Object result = joinPoint.proceed();
-        log.info("处理结果为:",result);
+        log.info("处理结果为:" + result);
         return result;
 
 
