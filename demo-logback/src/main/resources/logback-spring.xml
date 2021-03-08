@@ -1,6 +1,6 @@
 <configuration>
     <springProperty scope="context" name="project_name" source="spring.application.name"/>
-<!--    控制台输出-->
+<!--控制台输出-->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <!-- encoders are assigned the type
              ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
@@ -9,7 +9,7 @@
         </encoder>
     </appender>
 
-<!--    文件输出-->
+<!--文件输出-->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <encoder>
             <!--输出格式-->

@@ -35,9 +35,5 @@ public class LogAop {
         Object result = joinPoint.proceed();
         log.info("处理结果为:" + result);
         return result;
-
-
     }
-
-
 }
