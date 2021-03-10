@@ -18,5 +18,6 @@
         <module>demo-log-aop</module>
         <module>demo-exception-handler</module>
         <module>demo-template-freemarker</module>
+        <module>demo-thymeleaf</module>
     </modules>
 </project>
