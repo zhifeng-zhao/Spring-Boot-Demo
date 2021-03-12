@@ -1,5 +1,19 @@
+<% include("header.btl",{'name':'name:'}){}%>
 ${value}
 ${password!"无密码"}
 <% for (user in userList){%>
 ${user.name}
 <%}%>
+
+<%
+  for(user in userList){
+    print(user.name);
+  }
+%>
+
+<%if (userList == null) {%>
+    当前list无值
+<%}else{%>
+    当前list有值
+<%}%>
+${date,"yyyyMMdd"}

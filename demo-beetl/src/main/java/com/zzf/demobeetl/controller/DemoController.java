@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -28,6 +29,7 @@ public class DemoController {
             userList.add(new User(nameList[i]));
         }
         modelAndView.addObject("userList",userList);
+        modelAndView.addObject("date",new Date());
         return modelAndView;
     }
 }
