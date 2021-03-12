@@ -19,5 +19,6 @@
         <module>demo-exception-handler</module>
         <module>demo-template-freemarker</module>
         <module>demo-thymeleaf</module>
+        <module>demo-beetl</module>
     </modules>
 </project>
