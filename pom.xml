@@ -20,5 +20,6 @@
         <module>demo-template-freemarker</module>
         <module>demo-thymeleaf</module>
         <module>demo-beetl</module>
+        <module>demo-jdbctemplate</module>
     </modules>
 </project>
