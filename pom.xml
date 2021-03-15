@@ -21,5 +21,6 @@
         <module>demo-thymeleaf</module>
         <module>demo-beetl</module>
         <module>demo-jdbctemplate</module>
+        <module>demo-jpa</module>
     </modules>
 </project>
