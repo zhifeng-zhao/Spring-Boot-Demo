@@ -22,5 +22,6 @@
         <module>demo-beetl</module>
         <module>demo-jdbctemplate</module>
         <module>demo-jpa</module>
+        <module>demo-mybatis</module>
     </modules>
 </project>
