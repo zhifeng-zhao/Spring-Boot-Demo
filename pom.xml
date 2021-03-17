@@ -23,5 +23,6 @@
         <module>demo-jdbctemplate</module>
         <module>demo-jpa</module>
         <module>demo-mybatis</module>
+        <module>demo-mybatis-mapper-page</module>
     </modules>
 </project>
