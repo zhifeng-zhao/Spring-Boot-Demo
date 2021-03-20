@@ -47,4 +47,10 @@ class DemoMybatisPlusApplicationTests {
         System.out.println(page.getRecords());
         System.out.println(page.getTotal());
     }
+
+    @Test
+    void testActiveRecord() {
+        List<User> userList = new User().selectAll();
+        System.out.println(userList);
+    }
 }

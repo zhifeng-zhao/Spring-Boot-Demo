@@ -1,6 +1,7 @@
 package com.zzf.demomybatisplus.domain;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.extension.activerecord.Model;
 import lombok.Data;
 
 /**
@@ -9,7 +10,7 @@ import lombok.Data;
  */
 @Data
 @TableName("t_user")
-public class User {
+public class User extends Model<User> {
 
     private Integer id;
 
