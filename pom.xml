@@ -26,5 +26,6 @@
         <module>demo-mybatis-mapper-page</module>
         <module>demo-mybatis-plus</module>
         <module>demo-beetlsql</module>
+        <module>demo-cache-redis</module>
     </modules>
 </project>
