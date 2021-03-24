@@ -4,6 +4,8 @@ import com.google.common.collect.Maps;
 import com.zzf.redis.domain.User;
 import com.zzf.redis.service.UserService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.stereotype.Service;
 
 import java.util.Map;
 
@@ -12,6 +14,7 @@ import java.util.Map;
  * @date 2021/3/24 11:27 下午
  */
 @Slf4j
+@Service
 public class UserServiceImpl implements UserService {
     /**
      * 模拟数据库
@@ -27,12 +30,14 @@ public class UserServiceImpl implements UserService {
         DATEBASES.put(3L, new User(3L, "zzf3"));
     }
 
+    @Cacheable(value = "user", key = "#id")
     @Override
     public User get(Long id) {
         log.info("查询用户id=" + id);
         return DATEBASES.get(id);
     }
 
+    @Cacheable(value = "user", key = "#user.id")
     @Override
     public User saveOrUpdate(User user) {
         DATEBASES.put(user.getId(), user);
@@ -40,6 +45,7 @@ public class UserServiceImpl implements UserService {
         return user;
     }
 
+    @Cacheable(value = "user", key = "#id")
     @Override
     public void delete(Long id) {
         DATEBASES.remove(id);
