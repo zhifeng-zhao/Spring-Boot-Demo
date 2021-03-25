@@ -4,6 +4,7 @@ import com.google.common.collect.Maps;
 import com.zzf.redis.domain.User;
 import com.zzf.redis.service.UserService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
@@ -46,6 +47,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Cacheable(value = "user", key = "#id")
+    @CacheEvict(value = "user", allEntries = true)   // 清楚所有缓存
     @Override
     public void delete(Long id) {
         DATEBASES.remove(id);
