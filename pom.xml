@@ -27,5 +27,6 @@
         <module>demo-mybatis-plus</module>
         <module>demo-beetlsql</module>
         <module>demo-cache-redis</module>
+        <module>demo-cache-ehcache</module>
     </modules>
 </project>
