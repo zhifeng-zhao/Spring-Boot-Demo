@@ -1,0 +1,11 @@
+alipay:
+  app_id: 公司支付宝的APPID
+  merchant_private_key: 公司支付宝商户私钥
+  alipay_public_key: 公司支付宝公钥
+  notify_url: 公司支付宝异步回调地址
+  return_url: 公司支付宝同步回调地址（如果是二维码扫码可以不配置）
+  sign_type: RSA2
+  charset: utf-8
+  gatewayUrl: https://openapi.alipay.com/gateway.do
+  # 保存支付日志的地址 如果是linux服务器配置没有盘符
+  log_path: c:/tmp/
